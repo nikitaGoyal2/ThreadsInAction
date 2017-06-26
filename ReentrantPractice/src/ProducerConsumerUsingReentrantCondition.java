@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.locks.*;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class ProducerConsumerUsingReentrantCondition {
 
-    private java.util.concurrent.locks.ReentrantLock lock;
+    private ReentrantLock lock;
 
     private List<Integer> queue;
 
